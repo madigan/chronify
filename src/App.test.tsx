@@ -1,9 +1,9 @@
-import { render } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
-import App from './App';
+import { render } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
+import App from "./App";
 
-describe('App', () => {
+describe("App", () => {
   it("initializes", () => {
     expect(() => render(<App />)).not.toThrow();
-  })
+  });
 });
