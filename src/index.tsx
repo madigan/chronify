@@ -2,6 +2,7 @@ import { serve } from "bun";
 import index from "./ui/index.html";
 
 const server = serve({
+  port: process.env.PORT || 3000,
   routes: {
     "/*": index,
     "/api/health": {
