@@ -2,7 +2,7 @@ import { serve } from "bun";
 import index from "./ui/index.html";
 
 const server = serve({
-  port: process.env.PORT || 80,
+  port: process.env.PORT || 3000,
   hostname: "0.0.0.0",
   routes: {
     "/*": index,
