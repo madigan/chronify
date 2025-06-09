@@ -1,4 +1,5 @@
 import { Settings } from "lucide-react";
+import Auth from "./Auth";
 
 export default function Header() {
   return (
@@ -7,6 +8,9 @@ export default function Header() {
         <a href="/" className="btn btn-ghost text-xl">
           Chronify
         </a>
+      </div>
+      <div className="flex-none p-2">
+        <Auth />
       </div>
       <div className="flex-none p-2">
         <Settings />
