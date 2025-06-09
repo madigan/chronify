@@ -3,7 +3,7 @@ import index from "./ui/index.html";
 
 const server = serve({
   port: process.env.PORT || 3000,
-  hostname: "0.0.0.0",
+  hostname: process.env.NODE_ENV === "production" ? "0.0.0.0" : "localhost", // Google OAuth doesn't like 0.0.0.0
   routes: {
     "/*": index,
     "/api/health": {
